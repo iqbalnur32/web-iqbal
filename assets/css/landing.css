@@ -5,6 +5,7 @@
 
 /* Imported CSS */
 @import url('https://fonts.googleapis.com/css?family=Muli:300,400,700|Catamaran:100,200,300,400,700,600,700,800,900');
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
 /* End Imported CSS*/
 
 
@@ -45,391 +46,81 @@ h6{
 	padding: 0;
 }
 
-input:focus;,
-textarea:focus,
-button:focus{
-	outline: medium none; 
+.header h2 {
+	font-family: 'Do Hyeon', sans-serif;
+	font-weight: 900;
+	font-size: 40px;
+	letter-spacing: 4px;
+	padding-bottom: 15px;
+	color: #323232;
 }
 
-ul,
-ol{
-	margin: 0;
-	padding: 0;
+.header h3 {
+	font-size: 20px;
+	font-weight: 900
+	/*color: #323232;*/
 }
 
-li{
-	list-style-type: none;
-}
-a:focus,
-a:hover{
-	text-decoration: none;
-	transition: 0.5s;
-}
-.owl.corouse{
-	margin: auto;
+hr {
+	width: 700px;
+	border: 1px solid black;
 }
 
-/* Navbar */
-.navbar{
-	text-transform: uppercase;
-	font-weight: 700;
+/*Profile*/
+.profile {
 	padding-top: 30px;
 }
 
-
-.navbar img{
-	float: right;
-	max-height: 40px; 
-} 
-
-.navbar ul li{
-	padding-right: 20px;
-}
-
-.navbar li a{
-	color: #fff;
-	text-transform: capitalize;
-	letter-spacing: 1px;
-	font-size: 14px;
-	font-weight: 300; 
-}
-.navbar .navbar-nav .nav-link.active,
-.navbar .navbar-nav .nav-link:hover{
-	color: #05a1fd;
-}
-.navbar-top {
-	padding-top: 20px;
-	background-color: -webkit-rgba(0,0,0,0.75);
-	background-color: -o-rgba(0,0,0,0.75);
-	background-color: -moz-rgba(0,0,0,0.75);
-	background-color: rgba(0,0,0,0.75);
-}
-/* End Navbar */
-
-/*Home Css*/
-#monitor{
-    animation: monitorIn 2s ease-in-out forwards; /* assign animation to monitor with 'monitorIn' as keyframe name */
-    opacity: 0;
-}
-.crypto-icons{
-    position: absolute;
-    width: 12%;
-}
-
-#dash{
-    margin-top: -4%;
-    margin-left: -19%;
-    animation: chatblips .5s ease-in-out 2.7s forwards; /* assign animation to dash with 'chatblips' as keyframe name */
-    opacity: 0;
-    z-index: 2;
-}
-
-#eth{
-    margin-top: 9.5%;
-    margin-left: -43%;
-    animation: chatblips .5s ease-in-out 1.9s forwards; /* assign animation to eth with 'chatblips' as keyframe name */
-    opacity: 0;
-    z-index: 2;
-}
-
-#iota{
-    margin-top: 5%;
-    margin-left: -4.5%;
-    animation: chatblips .5s ease-in-out .8s forwards; /* assign animation to iota with 'chatblips' as keyframe name */
-    opacity: 0;
-    z-index: 2;
-}
-
-@keyframes monitorIn{
-    from{
-        transform: translateY(-30px);
-        opacity: 0;
-    }
-    to{
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-@keyframes chatblips{
-    /* taken from http://angrytools.com/css/animation/ for bounce-in animation*/
-    0%{
-        opacity: 0;
-        transform: scale(.3);
-      }
-      50%{
-        opacity: 1;
-        transform: scale(1.0);
-      }
-      70%{
-        transform: scale(0.9);
-      }
-      100%{
-        transform: scale(1);
-        opacity: 1;
-      }
-}
-#obrand-intro-area {
-	background: url('/img/background.jpg') no-repeat fixed center;
-	background-size: cover;
-	z-index: -1; 
-}
-#obrand-intro-area .obrand-intro-drak{
-	background-color: -webkit-rgba(0,0,0,0.75);
-	background-color: -o-rgba(0,0,0,0.75);
-	background-color: -moz-rgba(0,0,0,0.75);
-	background-color: rgba(0,0,0,0.75);
-	color: #fff;
-}
-#obrand-intro-area .row{
-	padding-top: 100px;
-	padding-bottom: 50px;
-	text-align: center;
-}
-.detail-intro{
-	padding-top: 50px; 
-	padding-bottom: 50px;
-}
-
-.detail-intro ul li {
-	display: inline-block;
-    list-style-type: none;
-    padding-right: 10px;
-    vertical-align: middle;
-    margin-left: 20px;
-}
-.detail-intro p{
-	color: #fff;
-}
-.fh5co-social-icons{
-	margin: 0px;
-	padding: 0px;
-}
-.detail-intro p:nth-child(1) {
-	font-size: 34px;
-	font-weight: 700;
-}
-.detail-intro p:nth-child(2) {
-	font-size: 18px;
-	padding-top: 15px;
-	padding-bottom: 10px;
-	font-weight: 300;
-}
-.detail-info a{
-	display: inline-block;
-	margin-right: 20px;
-	margin-bottom: 20px;
-	font-size: 14px;
-}
-.detail-info .pengurus a{
-	padding-right: 20px; 
-}
-
-.detail-intro a:nth-child(3) {
-	text-transform: uppercase;
-	color: #fff;
-	background: #504b4b;
-	padding: 10px 25px;
-	border: 1px solid #504b4b;
-	border-radius: 50px;
-	font-weight: 700;
-}
-.detail-intro a:nth-child(3):hover{
-	background: transparent;
-	color: #fff;
-	border: 1px solid #fff;
-}
-.detail-intro a:nth-child(4) {
-	text-transform: uppercase;
-	color: #fff;
-	background: transparent;
-	padding: 10px 25px;
-	border: 1px solid #fff;
-	border-radius: 50px;
-	font-weight: 700;
-}
-.detail-intro a:nth-child(4):hover {
-	background: #fff;
-	color: #000;
-}
-.banner-intro img {
-	float: center;
-	max-height: 700px;
-}
-/*End Home Css*/
-
-/* Why DKM MASJID*/
-#why-dkm-masjid{
-	padding-top: 70px;
-	padding-bottom: 70px; 
-}
-.title-why-dkm-masjid p:nth-child(1) {
-	font-size: 30px;
-	font-weight: 700;
-	text-transform: uppercase;
-	text-align: center;
-}
-.title-why-dkm-masjid p:nth-child(2) {
-	max-width: 600px;
-	text-align: center;
-	margin: 15px auto;
-}
-.detail-why-dkm-masjid {
-	padding-top: 40px;
-	padding-bottom: 40px;
-}
-.box-why-dkm-masjid {
-	border: 2px solid #fff;
-	border-radius: 8px;
-	box-shadow: 0 15px 30px rgba(102, 113, 228, 0.32);
-	padding-top: 20px;
-	padding-bottom: 20px;
-	height: 260px;
-}
-.box-why-dkm-masjid i:nth-child(1){
-	font-size: 50px;
-	color: #504b4b;
-	padding-top: 15px;
+.profile h2 {
+	font-family: 'Do Hyeon', sans-serif;
+	font-size: 37px;
 	padding-bottom: 15px;
+	font-weight: bolder; 
 }
-.box-why-dkm-masjid p:nth-child(2){
-	font-size: 25px;
+
+.text-profile p {
+	text-align: center;
+	font-size: 17px;
 	font-weight: 700;
+	letter-spacing: 2px;
 }
 
-.box-why-dkm-masjid p:nth-child(3){
-	padding: 10px 5px;
-	color: #748182;
-}
-/* End NWhy DKM MASJID*/
+/*Experience*/
 
-/* Pengalaman Saya */
-#pengalaman {
-	padding-top: 70px;
-	/*padding-bottom: 70px; */
-}
-#pengalaman-padding {
-	background: url('/img/background.jpg') no-repeat fixed center;
-	background-size: cover;
-	z-index: -1; 
-}
-#pengalaman .pengalaman-dark{
-	background-color: -webkit-rgba(0,0,0,0.75);
-	background-color: -o-rgba(0,0,0,0.75);
-	background-color: -moz-rgba(0,0,0,0.75);
-	background-color: rgba(0,0,0,0.75);
-	color: #fff;
-}
-.title-pengalaman p:nth-child(1) {
-	font-size: 30px;
-	font-weight: bold;
-	text-transform: uppercase;
-	text-align: center;
-	padding-top: 20%;
-}
-.title-pengalaman p:nth-child(2) {
-	max-width: 600px;
-	text-align: center;
-	margin: 15px auto;
-}
-
-.detail-pengalaman {
-	padding-top: 20px;
-	padding-bottom: 40px;
-}
-.box-pengalaman {
-	border: 2px solid #fff;
-	border-radius: 8px;
-	box-shadow: 0 15px 30px rgba(102, 113, 228, 0.32);
-	padding-top: 50px;
-	padding-bottom: 30px;
-	height: 250px;
-}
-.box-pengalaman h2{
-	font-weight: 600;
-	font-size: 20px;
-	line-height: 30px;
-	padding-bottom: 30px;
-}
-.box-pengalaman p:nth-child(2){
-	font-weight: 700;
-	font-size: 15px;
-	color: #0bceaf;
-}
-/* End Pengalaman */
-
-/* Contact */
-#contact {
-	background: #f3f5fb;
-	padding-top: 70px;
-	padding-bottom: 70px;
-}
-.title-contact p:nth-child(1) {
-	font-size: 30px;
-	font-weight: 700;
-	text-transform: uppercase;
-	text-align: center;
-}
-.title-contact p:nth-child(2) {
-	max-width: 600px;
-	text-align: center;
-	margin: 15px auto;
-} 
-.detail-contact {
+.pengalaman {
 	padding-top: 40px;
 }
-.detail-contact .form-control {
-	margin-bottom: 15px;
-	height: 50px;
-	border: medium none;
-	border-radius: 8px;
-	box-shadow: 0 15px 30px rgba(102, 113, 228, 0.13);
+
+.pengalaman h2 {
+	font-family: 'Do Hyeon', sans-serif;
+	font-size: 37px;
+	padding-bottom: 15px;
+	font-weight: bolder; 
 }
-.detail-contact textarea.form-control {
-	height: 200px;
-	resize: none;
-}
-.detail-contact ::placeholder {
-	color: #a2a1a1;
-}
-.detail-contact .btn {
-	color: #fff;
-    font-size: 14px;
-    background: #05a1fd;
-    padding: 9px 55px;
-    border-radius: 50px;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-top: 20px;
-}
-.detail-contact .btn:hover {
-	background: #0bceaf;
-}
-.detail-contact-info {
-	margin-left: 50px;
-}
-.detail-contact-info .item-info {
-	position: relative;
-	margin-bottom: 20px;
-}
-.detail-contact-info .item-info i {
-	position: absolute;
-	left: 0;
-	color: #0bceaf;
-	font-size: 30px;
-	padding-top: 5px;
-}
-.detail-contact-info .item-info p {
-	padding-left: 45px;
-}
-.detail-contact-info .item-info a {
-	color: #748182;
-}
-.detail-contact-info .item-info p:nth-child(2) {
-	font-size: 20px;
+
+.text-pengalaman p {
+	text-align: center;
+	font-size: 17px;
 	font-weight: 700;
+	letter-spacing: 2px;
 }
-.detail-contact-info .item-info p:nth-child(3) {
-	font-size: 15px;
-	color: #748182;
+
+/*Contact*/
+.contact {
+	padding-top: 30px;
 }
-/* End Contact */
+
+.contact h2 {
+	font-family: 'Do Hyeon', sans-serif;
+	font-size: 37px;
+	padding-bottom: 15px;
+	font-weight: bolder; 
+}
+
+.text-contact p {
+	text-align: center;
+	font-size: 17px;
+	color: #323232;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
