@@ -71,12 +71,12 @@ hr {
 	padding-top: 30px;
 } */
 
-/* .profile h2 {
+.profile h2 {
 	font-family: 'Do Hyeon', sans-serif;
 	font-size: 37px;
-	padding-bottom: 15px;
+	/* padding-bottom: 15px; */
 	font-weight: bolder; 
-} */
+}
 
 .text-profile p {
 	text-align: center;
