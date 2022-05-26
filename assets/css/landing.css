@@ -50,8 +50,8 @@ h6{
 	font-family: 'Do Hyeon', sans-serif;
 	font-weight: 900;
 	font-size: 40px;
-	letter-spacing: 4px;
-	padding-bottom: 15px;
+	/* letter-spacing: 4px; */
+	/* padding-bottom: 15px; */
 	color: #323232;
 }
 
@@ -67,16 +67,16 @@ hr {
 }
 
 /*Profile*/
-.profile {
+/* .profile {
 	padding-top: 30px;
-}
+} */
 
-.profile h2 {
+/* .profile h2 {
 	font-family: 'Do Hyeon', sans-serif;
 	font-size: 37px;
 	padding-bottom: 15px;
 	font-weight: bolder; 
-}
+} */
 
 .text-profile p {
 	text-align: center;
